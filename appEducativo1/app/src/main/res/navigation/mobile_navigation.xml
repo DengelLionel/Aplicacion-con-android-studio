@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_gallery2"
+        android:name="com.dengel.appeducativo.ui.gallery.algebraFragment"
+        android:label="@string/fragment_algebra"
+        tools:layout="@layout/fragment_algebra" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dengel.appeducativo.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_ciencia"
+        android:name="com.dengel.appeducativo.ui.ciencia.CienciaFragment"
+        android:label="@string/menu_ciencia"
+        tools:layout="@layout/fragment_ciencia" >
+        <action
+            android:id="@+id/action_nav_ciencia_to_nav_fisica"
+            app:destination="@id/nav_fisica" />
+        <action
+            android:id="@+id/action_nav_ciencia_to_nav_quimica"
+            app:destination="@id/nav_quimica" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_quimica"
+        android:name="com.dengel.appeducativo.ui.ciencia.QuimicaFragment"
+        android:label="@string/Fragment_Quimica"
+        tools:layout="@layout/fragment_quimica" />
+    <fragment
+        android:id="@+id/nav_fisica"
+        android:name="com.dengel.appeducativo.ui.ciencia.FisicaFragment"
+        android:label="@string/Fragment_Fisica"
+        tools:layout="@layout/fragment_fisica" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.dengel.appeducativo.ui.gallery.GalleryFragment"
+        android:label="@string/menu_matematica"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_gallery2"
+            app:destination="@id/nav_gallery2" />
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_geometria"
+            app:destination="@id/nav_geometria" />
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_trigonotria"
+            app:destination="@id/nav_trigonotria" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_trigonotria"
+        android:name="com.dengel.appeducativo.ui.gallery.TrigonometriaFragment"
+        android:label="@string/fragment_Trigonometria"
+        tools:layout="@layout/fragment_trigonometria" />
+    <fragment
+        android:id="@+id/nav_geometria"
+        android:name="com.dengel.appeducativo.ui.gallery.geometriaFragment"
+        android:label="@string/fragment_geometria"
+        tools:layout="@layout/fragment_geometria" />
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.dengel.appeducativo.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_comunicación"
+        tools:layout="@layout/fragment_slideshow" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_literatura"
+            app:destination="@id/nav_literatura" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_literatura"
+        android:name="com.dengel.appeducativo.ui.slideshow.LiteraturaFragment"
+        android:label="@string/Fragment_Literatura"
+        tools:layout="@layout/fragment_literatura" />
+</navigation>

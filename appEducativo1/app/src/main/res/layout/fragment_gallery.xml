@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment"
+    android:background="@drawable/fondopantalla"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:columnCount="2"
+        android:rowCount="5"
+        tools:layout_editor_absoluteX="-150dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rockaboy_rought"
+            android:text="@string/areas"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_margin="15sp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/algebrainicio"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@drawable/roundcorner1"
+
+
+            >
+            <TextView
+                android:id="@+id/text_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/algebra"
+                android:textSize="50sp"
+                android:fontFamily="@font/rockaboy_rought"
+                android:padding="10sp"
+                android:layout_marginTop="35sp"
+                android:textColor="@color/dorado"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/GeometriaInicio"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@drawable/roundcorner2"
+
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/geometria"
+                android:textSize="50sp"
+                android:fontFamily="@font/rockaboy_rought"
+                android:padding="10sp"
+                android:layout_marginTop="35sp"
+                android:textColor="@color/dorado"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/TrigonometriaInicio"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:background="@drawable/roundcorner3"
+
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Trigonometría"
+                android:textSize="50sp"
+                android:fontFamily="@font/rockaboy_rought"
+                android:padding="10sp"
+                android:layout_marginTop="35sp"
+                android:textColor="@color/dorado"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
